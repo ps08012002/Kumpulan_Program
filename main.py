@@ -69,6 +69,10 @@ while True :
 
     elif input_user == 10 :
 
+        fungsi = pilihan
+        fungsi.pil10('self')
+
+    elif input_user == 11 :
         print ("")
 
     else :
@@ -78,9 +82,9 @@ while True :
     print (f"={penutup}=")
     print(70*"=")
 
-    jawab = ["tidak", "Tidak", "TIDAK", "t", "T", "no", "No", "NO", "Ngak", "ngak", "GK", "gk", "Gk", "Engak", "engak", "Gak", "gak", "G", "g"]
+    jawab =  ["tidak", "Tidak", "TIDAK", "t", "T", "no", "No", "NO", "Ngak", "ngak", "GK", "gk", "Gk", "Engak", "engak", "Gak", "gak", "G", "g"]
 
-    akhir = input(f"Mulai Ulang Program ?       --> ")
+    akhir = input(f"Mulai Ulang Program ?      --> ")
 
     if akhir in jawab :
         break

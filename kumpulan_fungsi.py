@@ -376,12 +376,35 @@ class pilihan (object) :
             if b == 0 :
 
                 c += 1
-
-            if i > a :
-                break
             
         if c == 2 :
             print(f"{a} Adalah Bilangan Prima")
 
         else :
             print(f"{a} Bukanlah Bilangan Prima")        
+ 
+    def pil10 (self) :
+
+        akhir = int(input("Masukkan Batas Akhir : "))
+
+        i = 1
+        prima = []
+
+        while i <= akhir :
+        
+            hitung = 0
+            a = 1
+
+            while a <= i :
+            
+                if i%a == 0 :
+                    hitung += 1
+
+                a += 1
+
+            if hitung == 2 :
+                prima.append(i)
+
+            i += 1
+
+        print (prima)

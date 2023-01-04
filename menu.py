@@ -14,8 +14,9 @@ class daftar(object) :
         print ("6. Hitung Luas Bangun Datar ")
         print ("7. Melihat Calender Di Tahun Tertentu ")
         print ("8. Main Gunting Batu Kertas")
-        print ("9. Cek Bilangan Prima")
-        print ("10. Keluar \n")
+        print ("9. Cek Bilangan Prima (Satu Input)")
+        print ("10. Cek Bilangan Prima Dengan Batas Akhir")
+        print ("11. Keluar \n")
 
 
 
