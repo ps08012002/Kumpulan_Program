@@ -385,7 +385,9 @@ class pilihan (object) :
  
     def pil10 (self) :
 
+        print (70*"=" + "\n")       
         akhir = int(input("Masukkan Batas Akhir : "))
+        print (70*"=" + "\n")
 
         i = 1
         prima = []
@@ -407,4 +409,4 @@ class pilihan (object) :
 
             i += 1
 
-        print (prima)
+        print (f"Berikut Adalah Bilangan Prima Dari 1 - {akhir}  --> {prima}")

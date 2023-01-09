@@ -2,9 +2,9 @@ class daftar(object) :
 
     def isi (self) :
 
-        a = 38*"="
+        a = 40*"="
 
-        print ("Beberapa Program Yang Sudah Dibuat".center(70))
+        print ("|  Beberapa Program Yang Sudah Dibuat  |".center(70))
         print ((a).center(70))
         print("\n1. Penghitung Umur")
         print ("2. Pembuatan Segitiga")

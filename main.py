@@ -8,13 +8,13 @@ while True :
     os.system('cls')
 
     today = dt.datetime.today()
-    jam = (f"{today.strftime('%H')}.{today.strftime('%M')}".rjust(42))
+    jam = (f"{today.strftime('%H')}.{today.strftime('%M')}".rjust(46))
     salam = "Selamat Datang Di Kumpulan Program Sederhana".center(68)
     penutup = "Terima Kasih Telah Menggunakan Program Kami :)".center(68)
 
     print (f"{today.strftime('%A')}, {today.strftime('%d')} {today.strftime('%B')} {today.strftime('%Y')} {jam}") 
     print(70*"=")
-    print (f"={salam}=")
+    print (f"|{salam}|")
     print(70*"=")
 
     Menu = daftar
@@ -82,11 +82,11 @@ while True :
     print (f"={penutup}=")
     print(70*"=")
 
-    jawab =  ["tidak", "Tidak", "TIDAK", "t", "T", "no", "No", "NO", "Ngak", "ngak", "GK", "gk", "Gk", "Engak", "engak", "Gak", "gak", "G", "g"]
+    jawab =  ["Ya", "Yes", "Y", "y", "yes", "ya", "Iya", "iya"]
 
     akhir = input(f"Mulai Ulang Program ?      --> ")
 
-    if akhir in jawab :
+    if akhir not in jawab :
         break
 
 
