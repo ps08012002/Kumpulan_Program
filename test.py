@@ -31,15 +31,15 @@ print (70*"=")
 
 for i in range(buy) :
     jenis = int(input("Masukkan Pilihan Buah (1-7) --> "))
-    print ('\033[1A' + "Masukkan Pilihan Buah (1-7) --> " + '\033[K')
+    print ('\033[1A' + '\033[K')
 
     if jenis == 1 :
         pil_buah.append ("Mangga")
         berat =  int(input("Beli Mangga Berapa Kilo = "))
         berat_buah.append (berat)
-        print ('\033[1A' + "Beli Mangga Berapa Kilo = " + '\033[K')
         harga = berat * 35000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
    
@@ -49,6 +49,7 @@ for i in range(buy) :
         berat_buah.append (berat)
         harga = berat * 15000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
 
@@ -58,6 +59,7 @@ for i in range(buy) :
         berat_buah.append (berat)   
         harga = berat * 23000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
 
@@ -67,6 +69,7 @@ for i in range(buy) :
         berat_buah.append (berat)  
         harga = berat * 33000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
 
@@ -76,6 +79,7 @@ for i in range(buy) :
         berat_buah.append (berat)  
         harga = berat * 18000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
 
@@ -85,6 +89,7 @@ for i in range(buy) :
         berat_buah.append (berat)        
         harga = berat * 27000
         harga_buah.append (harga)
+        print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
 
