@@ -1,23 +1,24 @@
+from prettytable import PrettyTable
+
 class daftar(object) :
 
-    def isi (self) :
+    def isi () :
 
-        a = 40*"="
+        t = PrettyTable()
 
-        print ("|  Beberapa Program Yang Sudah Dibuat  |".center(70))
-        print ((a).center(70))
-        print("\n1. Penghitung Umur")
-        print ("2. Pembuatan Segitiga")
-        print ("3. Pembuatan Belah Ketupat (Ganjil)")
-        print ("4. Pembuatan Belah Ketupat (Genap)")
-        print ("5. Konveri Suhu")
-        print ("6. Hitung Luas Bangun Datar ")
-        print ("7. Melihat Calender Di Tahun Tertentu ")
-        print ("8. Main Gunting Batu Kertas")
-        print ("9. Cek Bilangan Prima (Satu Input)")
-        print ("10. Cek Bilangan Prima Dengan Batas Akhir")
-        print ("11. Keluar \n")
+        print ("Berikut Beberapa Program Yang Sudah Dibuat".center(70))
+        t.padding_width = 7
+        t.field_names = ["No", "Nama Program"]
+        t.add_row (["1", "Penghitung Umur"])
+        t.add_row (["2", "Pembuatan Segitiga"])
+        t.add_row (["3", "Pembuatan Belah Ketupat (Ganjil)"])
+        t.add_row (["4", "Pembuatan Belah Ketupat (Genap)"])
+        t.add_row (["5", "Konveri Suhu"])
+        t.add_row (["6", "Hitung Luas Bangun Datar"])
+        t.add_row (["7", "Melihat Calender Di Tahun Tertentu"])
+        t.add_row (["8", "Main Gunting Batu Kertas"])
+        t.add_row (["9", "Cek Bilangan Prima (Satu Input)"])
+        t.add_row (["10", "Cek Bilangan Prima Dengan Batas Akhir"])
+        t.add_row (["11", "Keluar"])
 
-
-
-
+        print (t)

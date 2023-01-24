@@ -16,9 +16,10 @@ while True :
     print(70*"=")
     print (f"|{salam}|")
     print(70*"=")
+    print ("")
 
     Menu = daftar
-    Menu.isi ('self')
+    Menu.isi ()
 
     input_user = int(input("Masukkan Pilihan Anda = "))
 
