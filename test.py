@@ -41,7 +41,7 @@ for i in range(buy) :
         berat =  int(input("Beli Mangga Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )
         harga = berat * 35000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
@@ -51,7 +51,7 @@ for i in range(buy) :
         berat =  int(input("Beli Pisang Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )
         harga = berat * 15000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
@@ -61,7 +61,7 @@ for i in range(buy) :
         berat =  int(input("Beli Jambu Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )   
         harga = berat * 23000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
@@ -71,7 +71,7 @@ for i in range(buy) :
         berat =  int(input("Beli Apel Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )  
         harga = berat * 33000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
@@ -81,7 +81,7 @@ for i in range(buy) :
         berat =  int(input("Beli Nanas Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )  
         harga = berat * 18000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
@@ -91,27 +91,37 @@ for i in range(buy) :
         berat =  int(input("Beli Melon Berapa Kilo = "))
         berat_buah.append (str(berat) + " Kg" )        
         harga = berat * 27000
-        harga_buah.append ("Rp." + str(harga))
+        harga_buah.append (harga)
         # print ('\033[1A' + '\033[K')
         # os.system('cls')
         # menu()
+
+# x= pil_buah.map()
+# y= berat_buah.split()
+# z= harga_buah.split()
+
+# print(z)
+
 
 os.system('cls')
 print (70*"=")
 print (salom1.center(70))
 print (70*"=")
-# t_harga = sum(harga_buah)
-t_harga = [""]
+
+x = sum(harga_buah)
+t_harga = f"Rp. {x}"
+
 tabel = PrettyTable()
 tabel.padding_width = 6
 tabel.add_column ("Nama Buah", pil_buah)
 tabel.add_column ("Berat Buah", berat_buah)
 tabel.add_column ("Harga Buah", harga_buah)
-tabel.add_row (["", "", t_harga])
 
 print(tabel)
+print(f"|\r ")
+print("Total Harga".center(49))
 
-harga_buah.re
+
 # print (f"| {a}+ \r Rp.{t_harga}|")
 
 # t = PrettyTable(['Teamname', 'Scores'])
