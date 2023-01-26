@@ -35,7 +35,7 @@ buy = int(input("Masukkan Berapa Banyak Jenis Buah Yang Akan Anda Beli --> "))
 print (70*"=")
 
 for i in range(buy) :
-    jenis = int(input(f"Masukkan Pilihan Buah Ke-{i+1} (1-7) --> "))
+    jenis = int(input(f"Masukkan Pilihan Buah Ke-{i+1}   --> "))
 
     if jenis == 1 :
         pil_buah.append ("Mangga")
@@ -127,6 +127,7 @@ print(69*"-")
 z = "\nSelamat Anda Mendapatkan Diskon 10% !!!".center(70)
 if t_harga > 100000 :
     print (z)
+    print ("Proses Menghitung Diskon Mohon Bersabar")
     time.sleep(5)
     os.system('cls')
 
@@ -144,7 +145,7 @@ if t_harga > 100000 :
     print(a.center(22),end = "|\n")
     print(69*"-")
 
-
+input("")
 
 
 

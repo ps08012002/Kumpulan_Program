@@ -74,6 +74,11 @@ while True :
         fungsi.pil10('self')
 
     elif input_user == 11 :
+
+        fungsi = pilihan
+        fungsi.pil11('self')
+
+    elif input_user == 12 :
         print ("")
 
     else :
