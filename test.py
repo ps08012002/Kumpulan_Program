@@ -1,4 +1,5 @@
 import os
+import time
 from prettytable import PrettyTable
 
 salom = "Selamat Datang Di Toko Buah Mr.UwaaW"
@@ -108,8 +109,8 @@ print (70*"=")
 print (salom1.center(70))
 print (70*"=")
 
-x = sum(harga_buah)
-t_harga = f"Rp. {x}"
+t_harga = sum(harga_buah)
+x = f"Rp. {t_harga}"
 
 tabel = PrettyTable()
 tabel.padding_width = 6
@@ -118,18 +119,33 @@ tabel.add_column ("Berat Buah", berat_buah)
 tabel.add_column ("Harga Buah", harga_buah)
 
 print(tabel)
-print(f"|\r ")
-print("Total Harga".center(49))
+print("|",end = "")
+print("Total Harga".center(44),end = "|")
+print(x.center(22),end = "|\n")
+print(69*"-")
+
+z = "\nSelamat Anda Mendapatkan Diskon 10% !!!".center(70)
+if t_harga > 100000 :
+    print (z)
+    time.sleep(4)
+    os.system('cls')
+
+    dis = t_harga * 10 / 100
+    j_total = t_harga - dis
+    a = f"Rp. {int(j_total)}"
+
+    print(tabel)
+    print("|",end = "")
+    print("Total Harga Sebelum Diskon".center(44),end = "|")
+    print(x.center(22),end = "|\n")
+    print(69*"-")
+    print("|",end = "")
+    print("Total Harga Setelah Diskon".center(44),end = "|")
+    print(a.center(22),end = "|\n")
+    print(69*"-")
 
 
-# print (f"| {a}+ \r Rp.{t_harga}|")
 
-# t = PrettyTable(['Teamname', 'Scores'])
-# t.add_row([teams[0], scores[0]])
-# t.add_row([teams[1], scores[1]])
 
-# print (pil_buah)
-# print (berat_buah)
-# print (harga_buah)
 
 
